@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html> 
+<head>
+   <style>   
+   .box{
+    background-color: white;
+    padding: 30px;
+    border-radius: 25px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+   }
+   img {
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+
+   }
+
+   button {
+    margin-top: 10px;
+   }
+    body {
+        background-color: #ffeef5;
+        text-align: center;
+        font-family: Arial;
+    }    
+    
+    h1{
+        font-size: 28px;
+        color: #ff69b4;
+    }
+
+    p{
+        font-size: 16px;
+        color: #555;
+    }
+
+     button {
+    background-color: #ffb6c1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+   }
+
+    button:hover {
+    background-color: palevioletred;
+    color: black;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    <h1>Hello! I am Avie</h1>
+    <p>This is my first website</p>
+
+    <button onclick="showMessage()">Click me 💗</button>
+    <p id="message"></p>
+
+    <img src="catpin.jpg.jfif" width="200" style="border-radius: 20px;">
+
+     <button onclick="playMusic()">🎵 Play Music</button>
+
+     </div>
+    <audio id="music">
+        <source src="duvet.mp3.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        function playMusic() {
+            document.getElementById("music").play();
+        }
+        function showMessage(){
+            document.getElementById("message").innerHTML = "You are a great person!💖";
+        }
+    </script>
+ </body>
+</html>
